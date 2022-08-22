@@ -1,0 +1,419 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a,a:hover{color:unset;text-decoration: none;}
+
+ul{
+    list-style-type: none;
+}
+
+
+/*------HEADER-----*/
+
+header{
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 10vh;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;
+}
+
+header nav{
+    width: 60%;
+}
+
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul a:hover{
+    color:#D2554B;
+}
+
+h1{
+    color:black;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+
+.grilla{
+    height: 80vh;
+    max-width: 90vw;
+    margin: 5vh auto;
+    /* background-color: rgb(194, 194, 194); */
+    display: grid;
+}
+
+.contenedor_img{
+    position: relative;
+    overflow: hidden;
+    height: 79vh;
+}
+
+/*------Apertura fullscreen-----*/
+.apertura{
+    grid-template-columns: 1fr;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.apertura img{
+    width: 100%;
+}
+
+
+/*------ QUIENES SOMOS-----*/
+
+.somos_grilla{
+           
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px; 
+}
+
+.somos_grilla img{
+    width: 100%;
+}
+
+h2.somos__titulo{
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.somos_texto{
+    font-size: 18px;
+    line-height: 2.5rem;
+    font-weight: lighter;
+    max-width: 700px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/*------GALERIA-----*/
+
+.galeria img{
+    background-color: red;
+    border: 1px solid black;
+    width: 100%;
+    transition-duration: 2s;
+}
+
+
+
+/*------Galeria_contenedor-----*/
+
+.galeria{
+
+/*------filas y columnas-----*/
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+
+/*------distribución en el espacio restante-----*/
+/*------horizontal-----*/
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+    /*------vertical-----*/
+    align-content: center;
+    
+}
+.galeria img:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+
+/*------PRODUCTOS-----*/
+/*------REEMPLAZAR LUEGO POR UN CARROUSEL-----*/
+
+/*------Producto_contenedor-----*/
+
+/* .producto_grilla{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px; 
+}
+
+.producto_grilla img {
+    width: 100%;
+    align-items: start;
+}
+
+.tarjeta{
+    border:1px solid;
+    text-align: center;
+    max-height: 73vh;
+}
+
+.tarjeta p{
+    padding: 5px 30px;
+}
+
+.tarjeta h2{
+    padding: 10px 30px;
+}
+
+.tarjeta button{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.tarjeta button:hover{
+    transform: scale(1.1);
+    border-color: #D2554B;
+} */
+
+/* .carousel{
+    background-color: aquamarine;
+} */
+
+#carouselOk h2{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+#carouselOk p{
+    font-size: 1.2rem;
+}
+
+.carousel-caption{
+    padding-bottom: 15rem;
+}
+
+.carousel-indicators{
+    margin-bottom: 13rem;
+}
+
+
+/*------OPORTUNIDADES-----*/
+
+.oportunidades_grilla{       
+    grid-template-columns: 3fr 1fr;
+    column-gap: 60px; 
+}
+
+.oportunidades_grilla img{
+    width: 100%;
+}
+
+.flotante {
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    width: 50%;
+    left: 12.5%;
+    /* background-color: black; */
+    padding: 25px 25px 40px 25px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.ofertas2 h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.ofertas2{
+    border: 15px solid #E3E3E3;
+    padding: 20px;
+    text-align: center;
+    height: 80vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.oferta__volanta{
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.oferta__descuento{
+    font-size: 1.5rem;
+    color:#D2554B;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.ofertas2 h4{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ofertas1 button{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ofertas1 button:hover{
+    transform: scale(1.1);
+    border:3px solid #D2554B;
+    color:#D2554B;
+}
+
+.ofertas1__titulo--destacado{
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*------FORMULARIO-----*/
+
+#formulario{
+    grid-template-columns: 1fr;
+    background-color: #CDC8BC;
+    height: 70vh;
+    padding: 5vh 0;
+}
+
+#formulario section{
+    width: 40vw;
+    height: 60vh;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 25px;
+    background-color: white;
+}
+
+#formulario h2.contacto{
+    margin-bottom: 10px;
+}
+
+#formulario input{
+    padding: 5px;
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 10px;
+}
+
+#formulario input.no_margen{
+    margin-right: 0
+}
+
+#formulario textarea{
+    padding: 20px;
+    width: 100%;
+    max-height: 200px;
+}
+
+/* #formulario form{
+    display: flex;
+} */
+
+
+/*------FOOTER-----*/
+
+footer{
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+}
+
+.marca_footer{
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.redes{
+    font-size: 2rem;
+}
+
+.redes a:hover{
+    color:#D2554B;
+}
+.direccion{
+line-height: 1;}
+
+
+
+/*------MEDIA QUERIES MOBILE-----*/
+/*------Header y Footer-----*/
+@media(max-width:780px){
+    header{height: 70px;text-align:center;display:unset}
+    header nav {width: 100%;margin-top:20px;}
+    header nav ul{display:unset}
+    header nav li{width: 33.33%;float: left;margin-bottom: 10px;}
+    header nav li:nth-child(4) {margin-left: 17%;}
+    .grilla{height: unset;display: unset;}
+    footer{display:unset;text-align: center;}
+    .marca_footer{font-size: 30px;margin-top: 25px;}
+    .redes{padding: 20px;}
+
+/*------quienes somos-----*/
+
+    .somos_grilla{grid-template-columns: auto;}
+    h2.somos__titulo{font-size: 20px;}
+    p.somos_texto{font-size: 14px;line-height: 1.5rem;}
+    .somos_grilla img{margin-top: 20px;}
+
+    /*------Galeria-----*/
+    .galeria{grid-template-columns:1fr 1fr}
+
+    /*------Productos-----*/
+    
+    #carouselOk h2{
+      font-size: 1.5rem;
+    }
+    
+    #carouselOk p{
+        font-size: 1rem;
+    }
+    
+    .carousel-caption{
+        padding-bottom: 5rem;
+    }
+    
+    .carousel-indicators{
+        margin-bottom: 2rem;
+    }
+    
+    /* .tarjeta{margin-top: 20px;max-height: unset;} */
+
+
+    /*------Oportunidades-----*/
+    .contenedor_img{height: 90px;float:left;overflow: unset;}
+    .flotante {position: absolute;z-index: 1;top: 35%;padding: 25px 25px 40px 25px;color: white;text-align: center;}
+    .ofertas1{display: inline-flex;}
+    .ofertas1__titulo--destacado{font-size: 2rem;text-align: center;}
+    .oportunidades_grilla img{width: 180%;}
+
+
+    /*------formulario-----*/
+
+    #formulario section{width: unset;height: unset;}
+}
+
