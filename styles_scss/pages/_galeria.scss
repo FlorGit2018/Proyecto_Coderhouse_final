@@ -1,0 +1,28 @@
+/*------GALERIA-----*/
+
+.galeria {
+	img {
+		border: 1px solid black;
+		width: 100%;
+		transition-duration: 2s;
+	}
+}
+
+
+/*------Galeria_contenedor-----*/
+
+.galeria {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 20px;
+	column-gap: 20px;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	align-content: center;
+	img {
+		&:hover {
+			transform: scale(1.1,1.1);
+		}
+	}
+}

@@ -1,0 +1,22 @@
+/*------ QUIENES SOMOS-----*/
+
+.somos_grilla {
+	grid-template-columns: 1fr 1fr;
+	column-gap: 60px;
+	img {
+		width: 100%;
+	}
+}
+h2.somos__titulo {
+	font-size: 28px;
+	font-weight: lighter;
+	margin-bottom: 1rem;
+	font-family: 'Montserrat', sans-serif;
+}
+p.somos_texto {
+	font-size: 18px;
+	line-height: 2.5rem;
+	font-weight: lighter;
+	max-width: 700px;
+	font-family: 'Montserrat', sans-serif;
+}

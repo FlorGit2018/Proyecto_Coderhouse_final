@@ -1,0 +1,10 @@
+/*------Apertura fullscreen-----*/
+.apertura {
+	grid-template-columns: 1fr;
+	height: 80vh;
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+	}
+}

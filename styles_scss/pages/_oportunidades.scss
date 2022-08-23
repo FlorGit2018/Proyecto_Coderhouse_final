@@ -1,0 +1,62 @@
+/*------OPORTUNIDADES-----*/
+
+.oportunidades_grilla {
+	grid-template-columns: 3fr 1fr;
+	column-gap: 60px;
+	img {
+		width: 100%;
+	}
+}
+.flotante {
+	position: absolute;
+	z-index: 1;
+	top: 55%;
+	width: 50%;
+	left: 12.5%;
+	padding: 25px 25px 40px 25px;
+	color: white;
+	text-align: center;
+}
+.ofertas2 {
+	h4 {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: small;
+		font-size: 1rem;
+	}
+	border: 15px solid #E3E3E3;
+	padding: 20px;
+	text-align: center;
+	height: 80vh;
+}
+.oferta__volanta {
+	font-size: 1.5rem;
+	padding: 15px 0;
+	text-transform: uppercase;
+}
+.oferta__descuento {
+	font-size: 1.5rem;
+	color: $color-primario;
+	margin-top: 20px;
+	font-weight: 700;
+}
+.ofertas1 {
+	button {
+		background-color: transparent;
+		padding: 10px;
+		border: 1px solid white;
+		color: white;
+		text-transform: uppercase;
+		margin-top: 20px;
+		&:hover {
+			transform: scale(1.1);
+			border: 3px solid $color-primario;
+			color: $color-primario;
+		}
+	}
+}
+.ofertas1__titulo--destacado {
+	font-size: 2rem;
+	font-weight: 100;
+	text-transform: uppercase;
+}

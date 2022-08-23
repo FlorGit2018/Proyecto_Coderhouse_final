@@ -1,0 +1,35 @@
+/*------FORMULARIO-----*/
+
+#formulario {
+	grid-template-columns: 1fr;
+	background-color: $color-secundario;
+	height: 70vh;
+	padding: 5vh 0;
+	section {
+		width: 40vw;
+		height: 60vh;
+		margin: 0 auto;
+		border: 1px solid;
+		padding: 25px;
+		background-color: white;
+	}
+	h2.contacto {
+		margin-bottom: 10px;
+	}
+	input {
+		padding: 5px;
+		width: 48%;
+		float: left;
+		margin-right: 4%;
+		margin-bottom: 10px;
+	}
+	input.no_margen {
+		margin-right: 0;
+	}
+	textarea {
+		padding: 20px;
+		width: 100%;
+		max-height: 200px;
+	}
+}
+
